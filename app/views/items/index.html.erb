@@ -1,0 +1,26 @@
+<h1>View <%= pluralize(@items.count, "Item") %></h1>
+<table>
+	<thead>
+		<tr>
+			<th>Item Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @items.each do |item|%>
+		<tr>
+			<td><%= item.name%></td>
+			<td><%= item.price%></td>
+			<td><%= item.quantity%></td>
+			<td><a href="/items/<%= item.id %>">Show</a>
+				<a href="/items/<%= item.id %>/edit">Edit</a>
+				<a href="/items/<%= item.id %>" data-method = "delete"
+					data-confirm="Are you sure?">Delete</a>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<a href="/items/new">Create Items</a>

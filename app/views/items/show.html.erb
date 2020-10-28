@@ -1,0 +1,20 @@
+<h1>View Item's <%= pluralize(@lists.count, "Lists") %></h1>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Store</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @lists.each do |list| %>
+		<tr>
+			<td><%= list.name %></td>
+			<td><%= list.store %></td>
+			<td><%= list.date %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<a href="/items">View Items</a>
