@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "lists/:id/edit" => "lists#edit"
   patch "lists/:id" => "lists#update"
   delete "lists/:id" => "lists#destroy"
+  get "appearances" => "appearances#index"
+  post "appearances" => "appearances#create"
 end
