@@ -1,11 +1,11 @@
 <h1>View <%= pluralize(@items.count, "Item") %></h1>
-<table>
+<table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Item Name</th>
-			<th>Price</th>
-			<th>Quantity</th>
-			<th>Actions</th>
+			<th scope="col">Item Name</th>
+			<th scope="col">Price</th>
+			<th scope="col">Quantity</th>
+			<th scope="col">Actions</th>
 		</tr>
 	</thead>
 	<tbody>

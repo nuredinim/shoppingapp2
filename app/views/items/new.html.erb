@@ -3,17 +3,17 @@
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	<div class="form-group">
 		<label>Name:</label>
-		<input type="text" name="item[name]">
+		<input type="text" name="item[name]" class="form-control">
 	</div>
 	<div class="form-group">
 		<label>Price:</label>
-		<input type="text" name="item[price]">
+		<input type="text" name="item[price]" class="form-control">
 	</div>
 	<div class="form-group">
 		<label>Quantity:</label>
-		<input type="text" name="item[quantity]">
+		<input type="text" name="item[quantity]" class="form-control">
 	</div>
-	<input type="submit" name="Create">
+	<input type="submit" name="Create" class="btn btn-primary">
 </form>
 
 <% if flash[:errors] %>

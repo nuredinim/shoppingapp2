@@ -1,10 +1,10 @@
 <h1>View List's <%= pluralize(@items.count, "Item") %></h1>
-<table>
+<table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Price</th>
-			<th>Quantity</th>
+			<th scope="col">Name</th>
+			<th scope="col">Price</th>
+			<th scope="col">Quantity</th>
 		</tr>
 	</thead>
 	<tbody>
